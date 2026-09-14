@@ -1,31 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>سایت من</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+
+            background: linear-gradient(
+                135deg,
+                #09001a,
+                #001f3f,
+                #16002e,
+                #001a17
+            );
+        }
+
+        .box {
+            background: rgba(0, 0, 0, 0.45);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0, 200, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 12px;
+            background: #00aaff;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0088cc;
+        }
+    </style>
+</head>
+
 <body>
 
-    <h1>چطوری خوشتیپ! 👋</h1>
+    <div class="box">
 
-    <p>این سایت منه 😎</p>
+        <h1>سلام! 👋</h1>
 
-    <img src="image.jpg" alt="عکس سایت" width="300">
+        <p>به سایت من خوش اومدی 😎🔥</p>
 
-    <button onclick="changeText()">کلیک کن!</button>
+        <button onclick="changeText()">کلیک کن!</button>
+
+    </div>
 
     <script>
         function changeText() {
             document.querySelector("p").innerText = "دکمه رو زدی! 🔥";
+            document.querySelector("button").style.backgroundColor = "red";
         }
     </script>
 
-body {
-    text-align: center;
-    color: white;
-    font-family: Arial;
-    min-height: 100vh;
-    margin: 0;
-
-    background: linear-gradient(
-        135deg,
-        #09001a,
-        #001f3f,
-        #16002e,
-        #001a17
-    );
-}
+</body>
+</html>
