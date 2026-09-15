@@ -1,110 +1,13 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ساتNavid(MBK)</title>
-
-    <style>
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background:linear-gradient(135deg, #16a34a,#0b0b0b);
-            color: #222;
-            text-align: center;
-        }
-
-        header {
-            background: #22c55e;
-            color: white;
-            padding: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        }
-
-        header h2 {
-            margin: 0;
-            font-size: 28px;
-        }
-
-        .main {
-            padding: 70px 20px;
-        }
-
-        h1 {
-            font-size: 45px;
-            color: #16a34a;
-            margin-bottom: 15px;
-        }
-
-        p {
-            font-size: 20px;
-            color: #555;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 15px 30px;
-            background: #ffe600;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(34,197,94,0.3);
-            transition: 0.2s;
-        }
-
-        .button:hover {
-            background: #16a34a;
-            transform: translateY(-3px);
-        }
-
-        .card {
-            max-width: 500px;
-            margin: 40px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
-            border: 2px solid #bbf7d0;
-        }
-
-        .card h2 {
-            color: #16a34a;
-        }
-
-        footer {
-            margin-top: 50px;
-            padding: 25px;
-            background: linear-gradient(
-        90deg,
-        #ff0000,
-        #000000
-    );
-
-    color: #000000;
-    font-weight: bold;
-}
-            color: white;
-        }
-
-    </style>
-
-</head>
-
-<body>
-
-    <header>
+<header>
 
         <h2>
-            🎮سایت گیمینگ Navid(mbk)
+            🎮 سایت گیمینگNavid(MBK)
         </h2>
 
     </header>
+
+
+    <!-- ===== قسمت اصلی ===== -->
 
     <div class="main">
 
@@ -112,38 +15,130 @@
             چطوری خوشتیپ! 🔥
         </h1>
 
-        <p>
-            خوش اومدی به سایت Navid(mbk) 😎
+        <p class="welcome">
+            خوش اومدی به سایتNavid(MBK) 😎
         </p>
 
-        <a href="#pack" class="button">
-            📦 Resource Pack ها
+        <a href="#packs" class="main-button">
+            📦 دیدن Resource Pack ها
         </a>
-
-        <div class="card" id="pack">
-
-            <h2>
-                🎮 Minecraft Java
-            </h2>
-
-            <p>
-                اینجا قراره Resource Pack های
-                خفن Minecraft Java رو قرار بدم.
-            </p>
-
-            <a href="#" class="button">
-                ⬇️ دانلود Resource Pack
-            </a>
-
-        </div>
 
     </div>
 
+
+    <!-- ===== Resource Pack ها ===== -->
+
+    <section class="packs" id="packs">
+
+        <h2>
+            📦 Resource Pack های من
+        </h2>
+
+
+        <div class="pack-container">
+
+
+            <!-- Resource Pack شماره 1 -->
+
+            <div class="pack">
+
+                <img
+                    src="pack1.jpg"
+                    alt="Resource Pack 1"
+                >
+
+                <h3>
+                    Resource Pack 1 🎮
+                </h3>
+
+                <p>
+                    توضیحات Resource Pack اول
+                </p>
+
+                <a
+                    href="pack1.zip"
+                    class="download"
+                    download
+                >
+                    ⬇️ دانلود
+                </a>
+
+            </div>
+
+
+            <!-- Resource Pack شماره 2 -->
+
+            <div class="pack">
+
+                <img
+                    src="pack2.jpg"
+                    alt="Resource Pack 2"
+                >
+
+                <h3>
+                    Resource Pack 2 ⚡
+                </h3>
+
+                <p>
+                    توضیحات Resource Pack دوم
+                </p>
+
+                <a
+                    href="pack2.zip"
+                    class="download"
+                    download
+                >
+                    ⬇️ دانلود
+                </a>
+
+            </div>
+
+
+            <!-- Resource Pack شماره 3 -->
+
+            <div class="pack">
+
+                <img
+                    src="pack3.jpg"
+                    alt="Resource Pack 3"
+                >
+
+                <h3>
+                    Resource Pack 3 🔥
+                </h3>
+
+                <p>
+                    توضیحات Resource Pack سوم
+                </p>
+
+                <a
+                    href="pack3.zip"
+                    class="download"
+                    download
+                >
+                    ⬇️ دانلود
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ===== پایین سایت ===== -->
+
     <footer>
 
-        ساخته شده با ❤️ برای گیمرها🎮
+        ساخته شده با ❤️ برای گیمرها 🎮
+
+        <br><br>
+
+        Minecraft Java Resource Packs
 
     </footer>
+
 
 </body>
 
