@@ -1,82 +1,109 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>سایتNavid(MBK)</title>
-
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            color: white;
-
-            background: linear-gradient(
-                135deg,
-                #09001a,
-                #001f3f,
-                #16002e,
-                #001a17
-            );
+.red {
+            color: #ff3333;
         }
 
-        .box {
-            background: rgba(0, 0, 0, 0.45);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 0 30px rgba(0, 200, 255, 0.3);
-        }
-
-        h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 20px;
-        }
-
-        button {
-            margin-top: 15px;
-            padding: 12px 28px;
-            border: none;
-            border-radius: 12px;
-            background: #00aaff;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #0088cc;
-        }
     </style>
 </head>
 
+
 <body>
 
-    <div class="box">
+    <!-- نوار بالا -->
 
-        <h1>چطوری خوشتیپ! 👋</h1>
+    <nav>
 
-        <p>به سایت من خوش اومدی 😎🔥</p>
+        <div class="logo">
+            🎮 MY GAMING SITE
+        </div>
 
-        <button onclick="changeText()">کلیک کن!</button>
+        <div>
+            <a href="#">خانه</a>
+            <a href="#features">ویژگی‌ها</a>
+        </div>
 
-    </div>
+    </nav>
 
-    <script>
-        function changeText() {
-            document.querySelector("p").innerText = "دکمه رو زدی! 🔥";
-            document.querySelector("button").style.backgroundColor = "red";
-        }
-    </script>
+
+    <!-- صفحه اصلی -->
+
+    <section class="hero">
+
+        <div class="hero-box">
+
+            <h1>
+                این <span>اولین سایت</span> منه! 🔥
+            </h1>
+
+            <p>
+                به سایت گیمینگ من خوش اومدی! 😎
+                <br>
+                اینجا قراره بهترین
+                <span class="minecraft">Minecraft Java Resource Pack</span>
+                ها رو پیدا کنی.
+            </p>
+
+            <!-- دکمه Resource Pack -->
+
+            <a class="button" href="resources.html">
+                🟢 مشاهده Resource Pack ها
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ویژگی ها -->
+
+    <section class="features" id="features">
+
+        <h2>
+            🔥 امکانات سایت
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🟢 Resource Pack</h3>
+                <p>
+                    مجموعه‌ای از Resource Pack های Minecraft Java
+                    برای دانلود.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🔴 Gaming</h3>
+                <p>
+                    طراحی گیمینگ با افکت‌ها و رنگ‌های جذاب.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🟡 Minecraft</h3>
+                <p>
+                    تمرکز سایت روی Minecraft Java Edition.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- پایین سایت -->
+
+    <footer>
+
+        ساخته شده با ❤️ برای گیمرها 🎮
+
+        <br><br>
+
+        <span class="red">
+            Minecraft Java Resource Packs
+        </span>
+
+    </footer>
 
 </body>
+
 </html>
